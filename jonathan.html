@@ -44,5 +44,12 @@
         cases we've been advised to simply go with smallest measurement to be on the safe side. Otherwise we have made good progress and we should
         have the tables merged. The rows that we can't be merged will be inserted in vehicle_specs.We plan to have the merging done before spring break
         and after we can focus on the database side of the desktop application.</p>
+    <p><strong> Feb28 </strong>
+        Good progress was made in figuring out the merge process. We encountered a situation where the make,model,and year were the same as well 
+        as other columns except for the curbweight. We brought this up to mike and discovered that the files used to import were labeled with a year,
+        but just because it had that year did not mean that it has info on just cars made that year. Mike couldn't explain why there were different
+        curbweights for the same car and we ultimately decided to re import the files in order and use the information from the latest file. So if a
+        car apperead in the 1995,1996, and 1997 file we would use the 1997 file info for the car.We're assuming that the latest file has the most
+        accurate info. After doing this we reduced the database down from 20,000 rows to a little under 14,000 rows.
 </body>
 </html>
