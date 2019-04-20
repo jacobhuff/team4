@@ -71,6 +71,13 @@
         encryption method as their are better ways, but we've struggled to implement different encryption methods in c++. We also face the same issue with being
         able to hash and verify in both languages.Looking into the SSL library and the bcrypt algorithim as there are already built in functions for both
         in php.</p>
+    <p><strong> April 18</strong> We couldn't get a password hashing library to work in both c++ and php. We could encrypt with AES-Encrypt,which uses mysql to 
+        encrypt. It's not the best method,but since the connection between the server and the client is already encrypted it works ok for now.The database currently
+        uses ECB Mode for encryption,which is a problem because encrypting the same strings would appear the same in the database. We will look into enabling a
+        different mode to make the encryption more secure. We looked into enabling CBC mode for encryption,which is more secure but we have had difficulty figuring out how
+        to enable it in the database.
+            We have given over our work to Mike and created a folder in the CS499 Github under the name of database encryption and hashing. We have also supplied a
+        readme of how we did the merge and our possible solutions to the problem of having to get the encryption/hashing to work between the app and the desktop UI.
         
 
    </p>
